@@ -1,0 +1,1045 @@
+/* styles.css */
+
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fuentes de Google */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/******** Estilos generales ********/
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding-top: 60px; /* Espacio para el header fijo */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header, footer {
+    background: linear-gradient(to right, #1E90FF, #00008B);
+    color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 15px 20px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+}
+
+header h1, footer p {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background 0.3s, transform 0.3s;
+}
+
+nav .flag-item {
+    margin-left: auto; /* Empuja el icono de la bandera al extremo derecho */
+}
+
+.flag-icon, .theme-icon {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+main {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/******** Estilos para las secciones ********/
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra horizontalmente el contenido */
+    justify-content: center; /* Centra verticalmente el contenido */
+    min-height: 100vh; /* Cada sección ocupa al menos una pantalla completa */
+    padding: 20px 0;
+    border-bottom: 1px solid #ffffff;
+    opacity: 0; /* Inicialmente ocultamos las secciones */
+    transform: translateY(50px); /* Las desplazamos hacia abajo */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Transición para el efecto de entrada */
+}
+
+section.visible {
+    opacity: 1; /* Hacemos visible la sección */
+    transform: translateY(0); /* La volvemos a su posición original */
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centra horizontalmente el contenido */
+}
+
+section h2 i {
+    margin-right: 10px;
+}
+
+section p, section ul {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    padding: 0 20px;
+    text-align: justify; /* Justificar el texto en las secciones */
+}
+
+/******** Estilos responsivos ********/
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background: #1a1a1a;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 0;
+        padding: 15px 0;
+        border-bottom: 1px solid #444;
+        text-align: center;
+    }
+
+    nav ul li:last-child {
+        border-bottom: none;
+    }
+
+    #menu-toggle {
+        display: inline-block;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+}
+/* Estilos responsivos para centrar el icono de la bandera */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background: #1a1a1a;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 0;
+        padding: 15px 0;
+        border-bottom: 1px solid #444;
+        text-align: center;
+        width: 100%;
+    }
+
+    nav ul li:last-child {
+        border-bottom: none;
+    }
+
+    #menu-toggle {
+        display: inline-block;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    /* Centrar el icono de la bandera */
+    .flag-item {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+
+/******** Estilos adicionales ********/
+nav ul li a:focus {
+    outline: 2px dashed #fff;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+section {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+
+/******** Estilos para el modo claro ********/
+body.light-mode {
+    background-color: #e0e0e0;
+    color: #000000;
+}
+
+body.light-mode header,
+body.light-mode footer {
+    background: #003366;
+    color: #ffffff; /* Texto en blanco para contraste */
+}
+
+body.light-mode header a,
+body.light-mode header button,
+body.light-mode header .button-class {
+    color: #ffffff; /* Texto de los enlaces y botones en blanco para contraste */
+}
+
+body.light-mode a {
+    color: #000000;
+}
+
+body.light-mode border,
+body.light-mode hr {
+    border-color: #003366; /* Borde divisor de secciones azul */
+}
+
+/* Estilos para habilidades */
+body.light-mode #skills ul {
+    color: #000000; /* Texto en negro */
+}
+
+/* Estilos para servicios */
+body.light-mode #services h2,
+body.light-mode #services h3,
+body.light-mode #services p {
+    color: #000000; /* Títulos y textos en negro */
+}
+
+/* Estilos para referencias */
+body.light-mode #references h2,
+body.light-mode #references h3,
+body.light-mode #references p {
+    color: #000000; /* Títulos y textos en negro */
+}
+/******** Estilos para el modo oscuro ********/
+body.dark-mode {
+    background-color: #1C1C1C;
+    color: #ffffff;
+}
+
+body.dark-mode header,
+body.dark-mode footer {
+    background: #000000;
+}
+
+body.dark-mode a {
+    color: #ffffff;
+}
+
+body.dark-mode border,
+body.dark-mode hr {
+    border-color: #000000;
+}
+
+/******** Estilos para la sección Acerca de Mi ********/
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center; /* Centra horizontalmente el contenido */
+    gap: 20px;
+}
+
+.about-content p {
+    flex: 1 1 50%;
+    max-width: 500px;
+    text-align: justify; /* Justificar el texto en Acerca de Mi */
+}
+
+.about-content img {
+    flex: 1 1 50%;
+    max-width: 520px; /* Tamaño para pantallas más grandes */
+    height: auto;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .about-content img {
+        max-width: 400px; /* Tamaño para dispositivos móviles */
+    }
+}
+
+#about h2 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/******** Iconos habilidades ********/
+#skills {
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra horizontalmente el contenido */
+}
+
+#skills h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#skills ul {
+    list-style: none;
+    padding: 0;
+    font-size: 1.2rem;
+    color: #ffffff;
+    text-align: justify; /* Centra el texto */
+}
+
+#skills ul li {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+#skills ul li ul {
+    list-style: disc inside;
+}
+
+#skills .icon-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+#skills .icon-container i {
+    font-size: 3rem;
+    margin: 10px;
+    transition: transform 0.3s, color 0.3s;
+}
+
+#skills .icon-container i:hover {
+    transform: scale(1.2);
+    color: #007bff;
+}
+
+/* Colores específicos para los iconos de habilidades */
+.fab.fa-html5 { color: #e34f26; }
+.fab.fa-css3-alt { color: #1572b6; }
+.fab.fa-js { color: #f7df1e; }
+.fab.fa-react { color: #61dafb; }
+.fab.fa-node { color: #339933; }
+.fas.fa-database { color: #336791; }
+.fab.fa-git-alt { color: #f34f29; }
+.fab.fa-github { color: #181717; }
+.fas.fa-bolt { color: #fdd835; }
+.fab.fa-figma { color: #f24e1e; }
+.fas.fa-flask { color: #4a90e2; }
+.fab.fa-slack { color: #4a154b; }
+.fas.fa-video { color: #e94235; }
+.fas.fa-code { color: #007acc; }
+
+/******** Estilos para los iconos de contacto ********/
+.contact-icons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.contact-icons a {
+    color: #333;
+    font-size: 2rem;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.contact-icons a:hover, .contact-icons a:focus {
+    color: #1a1a1a;
+    transform: scale(1.2);
+}
+
+.contact-icons a:focus {
+    outline: none;
+}
+
+/* Colores específicos para los iconos de contacto */
+.contact-icons .fa-whatsapp { color: #25d366; }
+.contact-icons .fa-facebook { color: #3b5998; }
+.contact-icons .fa-linkedin { color: #0077b5; }
+.contact-icons .fa-instagram { color: #e4405f; }
+.contact-icons .fa-envelope { color: #ea4335; }
+
+/******** Estilos proyectos ********/
+#projects {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra horizontalmente el contenido */
+}
+
+#projects h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#projects ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+}
+
+#projects li {
+    position: relative;
+    width: 100%;
+    height: 420px; /* Fixed height for project containers */
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra horizontalmente el contenido */
+}
+
+#projects iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+#projects .project-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+    padding: 20px;
+    text-align: justify; /* Justificar el texto en la información del proyecto */
+}
+
+#projects li:hover .project-info {
+    opacity: 1;
+}
+
+#projects h3 {
+    margin: 10px 0;
+}
+
+#projects p {
+    margin: 5px 0;
+    text-align: justify; /* Justificar el texto en la información del proyecto */
+}
+
+#projects a {
+    color: #000000;
+    text-decoration: none;
+    margin-top: auto;
+}
+
+.preview-button {
+    color: #dfdfdf;
+    text-decoration: none;
+    margin-top: auto;
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid #ff0000;
+    border-radius: 5px;
+    background-color: #ff0000;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.preview-button:hover {
+    background-color: #ff0000;
+    color: #fff;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.preview-button:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/******** Responsiveness ********/
+@media (min-width: 768px) {
+    #projects ul {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    #projects ul {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 1200px) {
+    #projects ul {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/******** Estilos Servicios ********/
+#services {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#services h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #ffffff;
+}
+
+#services ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#services ul li {
+    flex: 1 1 22%;
+    max-width: 22%;
+    background: transparent;
+    margin: 20px 0;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+#services ul li:hover {
+    transform: scale(1.05);
+}
+
+#services ul li i {
+    font-size: 50px;
+    margin-bottom: 15px;
+    color: #007bff;
+    transition: color 0.3s ease;
+}
+
+#services ul li:hover i {
+    color: #0056b3;
+}
+
+#services ul li h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+#services ul li p {
+    font-size: 18px;
+    color: #cec8c8;
+}
+
+.contact-icons {
+    margin-top: 40px;
+}
+
+.contact-icons a {
+    display: inline-block;
+    margin: 0 15px;
+    font-size: 24px;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.contact-icons a:hover {
+    color: #007bff;
+}
+
+/* Estilos Responsivos */
+@media (max-width: 1200px) {
+    #services ul li {
+        flex: 1 1 30%;
+        max-width: 30%;
+    }
+}
+
+@media (max-width: 992px) {
+    #services ul li {
+        flex: 1 1 45%;
+        max-width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    #services ul li {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    #services ul li i {
+        font-size: 40px;
+    }
+
+    #services ul li h3 {
+        font-size: 24px;
+    }
+
+    #services ul li p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 576px) {
+    #services h2 {
+        font-size: 28px;
+    }
+
+    .contact-icons a {
+        font-size: 20px;
+    }
+}
+
+
+
+/******** CONTACTO css ********/
+#contact-form {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 40px auto 0;
+    padding: 20px;
+    background-color: #111; /* Cambia el color de fondo a negro */
+    border-radius: 8px;
+    border: 1px solid #444; /* Ajusta el color del borde */
+    color: #fff; /* Asegura que el texto sea legible */
+}
+
+#contact-form fieldset {
+    border: none; /* Elimina el borde del fieldset */
+    padding: 0; /* Elimina el padding del fieldset */
+}
+
+#contact-form legend {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #fff; /* Asegura que el texto sea legible */
+}
+
+#contact-form div {
+    margin-bottom: 15px;
+}
+
+#contact-form label {
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 5px;
+    display: block;
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    background-color: #fff; /* Ajusta el color de fondo de los inputs a blanco */
+    color: #000; /* Asegura que el texto sea negro */
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+    border-color: #5cb85c;
+    box-shadow: 0 0 8px rgba(92, 184, 92, 0.2);
+}
+
+#contact-form button {
+    padding: 15px 0; /* Ajusta el padding para que el botón sea más grande */
+    background-color: #5cb85c;
+    color: #000; /* Cambia el color del texto a negro */
+    font-size: 1.2rem; /* Aumenta el tamaño del texto */
+    font-weight: 600;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    width: 100%; /* Hace que el botón ocupe todo el ancho */
+    text-align: center; /* Centra el texto dentro del botón */
+}
+
+#contact-form button:hover {
+    background-color: #4cae4c;
+    transform: scale(1.05);
+}
+
+#contact-form button:active {
+    background-color: #449d44;
+    transform: scale(1);
+}
+
+/* New CSS for centering the contact hours paragraph */
+.contact-hours {
+    text-align: center;
+    font-weight: bold; /* Optional: to make the text stand out */
+    margin-top: 20px; /* Optional: to add some space above the text */
+}
+
+
+/******** References ********/
+#references {
+    padding: 4rem;
+    text-align: center;
+}
+
+#references h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #ffffff;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+#references ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem;
+    list-style: none;
+    padding: 0;
+}
+
+#references li {
+    background-color: #49494950;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+}
+
+#references li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+#references img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    margin-bottom: 1.5rem;
+    border: 4px solid #000000;
+}
+
+#references h3 {
+    font-size: 1.5rem;
+    margin: 0.75rem 0;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+#references p {
+    font-size: 1rem;
+    color: #ffffff;
+    padding: 0 1.5rem;
+    text-align: justify; /* Justificar el texto en las referencias */
+}
+
+@media (min-width: 768px) {
+    #references {
+        padding: 6rem;
+    }
+
+    #references h2 {
+        font-size: 3rem;
+    }
+
+    #references ul {
+        gap: 2.5rem;
+    }
+
+    #references li {
+        border-radius: 20px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    }
+
+    #references h3 {
+        font-size: 1.75rem;
+    }
+
+    #references p {
+        font-size: 1.1rem;
+    }
+
+    .contact-icons a {
+        font-size: 2rem;
+    }
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 375px) {
+    #references {
+        padding: 2rem;
+    }
+
+    #references h2 {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    #references ul {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    #references li {
+        padding: 1.5rem 0.75rem;
+    }
+
+    #references img {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 1rem;
+    }
+
+    #references h3 {
+        font-size: 1.25rem;
+    }
+
+    #references p {
+        font-size: 0.875rem;
+        padding: 0 1rem;
+    }
+
+    .contact-icons a {
+        font-size: 1.5rem;
+    }
+}
+
+/******** Education ********/
+.education-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.education-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+}
+
+.education-text {
+    flex: 1;
+    min-width: 300px;
+    text-align: justify; /* Justificar el texto en la sección de educación */
+}
+
+.education-gallery {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.gallery-wrapper {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
+.gallery {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: 100%;
+}
+
+.gallery-item {
+    min-width: 100%;
+    transition: transform 0.5s ease;
+}
+
+.gallery-item img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: grab;
+}
+
+.gallery-item img:active {
+    cursor: grabbing;
+}
+
+/* Estilos para el contenedor de carga */
+#loading-container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: black; /* Fondo negro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+/* Estilos para el GIF */
+#loading-container img {
+    width: 80%; /* Ajuste predeterminado para pantallas más grandes */
+    max-width: 300px; /* Tamaño máximo para el GIF */
+    height: auto; /* Mantener la proporción del GIF */
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+    #loading-container img {
+        width: 60%; /* Reducir el tamaño del GIF en pantallas pequeñas */
+        max-width: 200px; /* Tamaño máximo para el GIF en móviles */
+    }
+}
+/************************iconos de titulos secciones********************************/
+/* Estilos para los iconos en los títulos de cada sección específica */
+#about h2 i, /* Acerca de Mi */
+#skills h2 i, /* Habilidades */
+#projects h2 i, /* Proyectos */
+#services h2 i, /* Servicios */
+#contact h2 i, /* Contacto */
+#references h2 i, /* Referencias */
+.education-section h2 i { /* Formación */
+    font-size: 2.5rem;
+    margin-right: 10px;
+    color: #ff4500; /* Un color vibrante */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Sombra para efecto realista */
+    transition: transform 0.3s ease, text-shadow 0.3s ease; /* Efecto de transición */
+}
+
+#about h2 i:hover, /* Acerca de Mi */
+#skills h2 i:hover, /* Habilidades */
+#projects h2 i:hover, /* Proyectos */
+#services h2 i:hover, /* Servicios */
+#contact h2 i:hover, /* Contacto */
+#references h2 i:hover, /* Referencias */
+.education-section h2 i:hover { /* Formación */
+    transform: scale(1.2); /* Aumenta ligeramente el tamaño al pasar el ratón */
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5); /* Sombra más pronunciada al pasar el ratón */
+}
+/*********************estilos sol y luna*************************/
+
+/* Estilos para el botón de cambio de tema */
+.theme-icon i {
+    font-size: 24px;
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Estilos para el icono de sol (día) */
+.theme-icon .fa-sun {
+    color: #FFD700; /* Color dorado para el sol */
+    text-shadow: 0 0 10px rgba(255, 223, 0, 0.8), 0 0 20px rgba(255, 223, 0, 0.6);
+}
+
+.theme-icon .fa-sun:hover {
+    transform: scale(1.2);
+    color: #FFA500; /* Color anaranjado para el sol al pasar el cursor */
+}
+
+/* Estilos para el icono de luna (noche) */
+.theme-icon .fa-moon {
+    color: #B0C4DE; /* Color plateado para la luna */
+    text-shadow: 0 0 10px rgba(176, 196, 222, 0.8), 0 0 20px rgba(176, 196, 222, 0.6);
+}
+
+.theme-icon .fa-moon:hover {
+    transform: scale(1.2);
+    color: #4682B4; /* Color azul acero para la luna al pasar el cursor */
+}
