@@ -71,7 +71,69 @@
                     "technologies": "Tecnologías: React.js, CSS, JavaScript",
                     "description": "Aplicación para gestionar usuarios, permitiendo crear, leer, actualizar y eliminar registros.",
                     "preview": "Vista Previa"
+                },
+                {
+                    "title": "Devlogic - Startup",
+                    "technologies": "Tecnologías: HTML, CSS, JavaScript",
+                    "description": "Sitio web oficial de la startup Devlogic, ofreciendo servicios de desarrollo web personalizados y soluciones digitales.",
+                    "preview": "Vista Previa"
+                },{
+                    "title": "Barbería",
+                    "technologies": "Tecnologías: HTML, CSS, JavaScript",
+                    "description": "Plantilla para barberías con diseño moderno, sección de servicios y sistema de reservas online.",
+                    "preview": "Vista Previa"
+                },{
+                    "title": "Construcción",
+                    "technologies": "Tecnologías: HTML, CSS, JavaScript",
+                    "description": "Plantilla profesional para empresas de construcción, con portafolio de proyectos y servicios.",
+                    "preview": "Vista Previa"
+                },
+                {
+                    "title": "Aplicación Móvil",
+                    "technologies": "Tecnologías: HTML, CSS, JavaScript",
+                    "description": "Plantilla para la promoción de aplicaciones móviles, destacando características y enlaces de descarga.",
+                    "preview": "Vista Previa"
+                },
+                {
+                    "title": "Autopartes",
+                    "technologies": "Tecnologías: HTML, CSS, JavaScript",
+                    "description": "Plantilla para tiendas de autopartes, con catálogo de productos y opciones de compra online.",
+                    "preview": "Vista Previa"
+                },
+                {
+                    "title": "Renta de Autos",
+                    "technologies": "Tecnologías: HTML, CSS, JavaScript",
+                    "description": "Plantilla para empresas de alquiler de vehículos, con reserva online y detalles de la flota.",
+                    "preview": "Vista Previa"
+                },
+                {
+                    "title": "Cafetería Moderna",
+                    "technologies": "Tecnologías: HTML, CSS, JavaScript",
+                    "description": "Plantilla para cafés modernos, con menú, reservas, tienda en línea y diseño atractivo.",
+                    "preview": "Vista Previa"
+                },
+                 {
+                    "title": "Cafetería Clásica",
+                    "technologies": "Tecnologías: HTML, CSS, JavaScript",
+                    "description": "Plantilla para cafeterías tradicionales, con menú clásico, historia y reservas.",
+                    "preview": "Vista Previa"
+                },
+                {
+                    "title": "Tienda de Ropa",
+                    "technologies": "Tecnologías: HTML, CSS, JavaScript",
+                    "description": "Plantilla para tiendas de moda, con catálogo de productos, carrito de compras y ofertas.",
+                    "preview": "Vista Previa"
                 }
+
+
+
+
+
+
+
+
+
+                
             ]
         },
         "services": {
@@ -256,7 +318,62 @@
                    "technologies": "Technologies: React.js, CSS, JavaScript",
                     "description": "Application to manage users, allowing to create, read, update and delete records.",
                     "preview": "Preview"
+                },
+                {
+                    "title": "Devlogic - Startup",
+                    "technologies": "Technologies: HTML, CSS, JavaScript",
+                    "description": "Official website of the startup Devlogic, offering custom web development services and digital solutions.",
+                    "preview": "Preview"
+                },
+                {
+                    "title": "Barbershop",
+                    "technologies": "Technologies: HTML, CSS, JavaScript",
+                    "description": "Template for barbershops with a modern design, service section, and online booking system.",
+                    "preview": "Preview"
+                },
+                {
+                    "title": "Construction",
+                    "technologies": "Technologies: HTML, CSS, JavaScript",
+                    "description": "Professional template for construction companies, featuring a project portfolio and services.",
+                    "preview": "Preview"
+                },
+                {
+                    "title": "Mobile App",
+                    "technologies": "Technologies: HTML, CSS, JavaScript",
+                    "description": "Template for mobile app promotion, highlighting features and download links.",
+                    "preview": "Preview"
+                },
+                {
+                    "title": "Auto Parts",
+                    "technologies": "Technologies: HTML, CSS, JavaScript",
+                    "description": "Template for auto parts stores, with a product catalog and online shopping options.",
+                    "preview": "Preview"
+                },
+                {
+                    "title": "Car Rental",
+                    "technologies": "Technologies: HTML, CSS, JavaScript",
+                    "description": "Template for car rental companies, with online booking and fleet details.",
+                    "preview": "Preview"
+                },
+                {
+                    "title": "Modern Café",
+                    "technologies": "Technologies: HTML, CSS, JavaScript",
+                    "description": "Template for modern cafés, with menu, reservations, online store, and attractive design.",
+                    "preview": "Preview"
+                },
+                {
+                    "title": "Classic Café",
+                    "technologies": "Technologies: HTML, CSS, JavaScript",
+                    "description": "Template for traditional cafés, with a classic menu, history, and reservations.",
+                    "preview": "Preview"
+                },
+                {
+                    "title": "Clothing Store",
+                    "technologies": "Technologies: HTML, CSS, JavaScript",
+                    "description": "Template for fashion stores, with a product catalog, shopping cart, and offers.",
+                    "preview": "Preview"
                 }
+
             ]
         },
         "services": {
@@ -442,7 +559,65 @@
                     "technologies": "Technologies: React.js, CSS, JavaScript",
                     "description": "Application pour gérer les utilisateurs, permettant de créer, lire, mettre à jour et supprimer des enregistrements.",
                     "preview": "Aperçu"
+                },
+                {
+                    "title": "Devlogic - Startup",
+                    "technologies": "Technologies : HTML, CSS, JavaScript",
+                    "description": "Site officiel de la startup Devlogic, offrant des services de développement web personnalisés et des solutions numériques.",
+                    "preview": "Aperçu"
+                },
+                {
+                    "title": "Barberie",
+                    "technologies": "Technologies : HTML, CSS, JavaScript",
+                    "description": "Modèle pour barberies avec un design moderne, section de services et système de réservation en ligne.",
+                    "preview": "Aperçu"
+                },
+                {
+                    "title": "Construction",
+                    "technologies": "Technologies : HTML, CSS, JavaScript",
+                    "description": "Modèle professionnel pour les entreprises de construction, avec un portfolio de projets et des services.",
+                    "preview": "Aperçu"
+                },
+
+                {
+                    "title": "Application Mobile",
+                    "technologies": "Technologies : HTML, CSS, JavaScript",
+                    "description": "Modèle pour la promotion d'applications mobiles, mettant en avant les fonctionnalités et les liens de téléchargement.",
+                    "preview": "Aperçu"
+                },
+
+                {
+                    "title": "Pièces Auto",
+                    "technologies": "Technologies : HTML, CSS, JavaScript",
+                    "description": "Modèle pour magasins de pièces auto, avec catalogue de produits et options d'achat en ligne.",
+                    "preview": "Aperçu"
+                },
+
+                {
+                    "title": "Location de Voitures",
+                    "technologies": "Technologies : HTML, CSS, JavaScript",
+                    "description": "Modèle pour les entreprises de location de voitures, avec réservation en ligne et détails de la flotte.",
+                    "preview": "Aperçu"
+                },
+                {
+                    "title": "Café Moderne",
+                    "technologies": "Technologies : HTML, CSS, JavaScript",
+                    "description": "Modèle pour cafés modernes, avec menu, réservations, boutique en ligne et design attrayant.",
+                    "preview": "Aperçu"
+                },
+                {
+                    "title": "Café Classique",
+                    "technologies": "Technologies : HTML, CSS, JavaScript",
+                    "description": "Modèle pour cafés traditionnels, avec menu classique, histoire et réservations.",
+                    "preview": "Aperçu"
+                },
+                {
+                    "title": "Boutique de Vêtements",
+                    "technologies": "Technologies : HTML, CSS, JavaScript",
+                    "description": "Modèle pour boutiques de mode, avec catalogue de produits, panier d'achat et offres.",
+                    "preview": "Aperçu"
                 }
+
             ]
         },
         "services": {
@@ -627,7 +802,61 @@
                     "technologies": "เทคโนโลยี: React.js, CSS, JavaScript",
                     "description": "แอปพลิเคชันสำหรับจัดการผู้ใช้ ซึ่งสามารถสร้าง อ่าน อัปเดต และลบบันทึกได้",
                     "preview": "ดูตัวอย่าง"
+                },
+                {
+                    "title": "Devlogic - สตาร์ทอัพ",
+                    "technologies": "เทคโนโลยี: HTML, CSS, JavaScript",
+                    "description": "เว็บไซต์อย่างเป็นทางการของสตาร์ทอัพ Devlogic ที่ให้บริการพัฒนาเว็บแบบกำหนดเองและโซลูชันดิจิทัล",
+                    "preview": "ดูตัวอย่าง"
                 }
+                ,{
+                    "title": "ร้านตัดผม",
+                    "technologies": "เทคโนโลยี: HTML, CSS, JavaScript",
+                    "description": "แม่แบบสำหรับร้านตัดผมที่มีดีไซน์ทันสมัย ส่วนบริการและระบบจองออนไลน์",
+                    "preview": "ดูตัวอย่าง"
+                },{
+                    "title": "การก่อสร้าง",
+                    "technologies": "เทคโนโลยี: HTML, CSS, JavaScript",
+                    "description": "แม่แบบสำหรับบริษัทก่อสร้างที่มีผลงานโครงการและบริการ",
+                    "preview": "ดูตัวอย่าง"
+                },{
+                    "title": "แอปพลิเคชันมือถือ",
+                    "technologies": "เทคโนโลยี: HTML, CSS, JavaScript",
+                    "description": "แม่แบบสำหรับการโปรโมทแอปพลิเคชันมือถือโดยเน้นฟีเจอร์และลิงก์ดาวน์โหลด",
+                    "preview": "ดูตัวอย่าง"
+                },
+                {
+                    "title": "อะไหล่รถยนต์",
+                    "technologies": "เทคโนโลยี: HTML, CSS, JavaScript",
+                    "description": "แม่แบบสำหรับร้านอะไหล่รถยนต์ที่มีแคตตาล็อกสินค้าและตัวเลือกการซื้อออนไลน์",
+                    "preview": "ดูตัวอย่าง"
+                },
+                {
+                    "title": "เช่ารถยนต์",
+                    "technologies": "เทคโนโลยี: HTML, CSS, JavaScript",
+                    "description": "แม่แบบสำหรับบริษัทเช่ารถที่มีระบบจองออนไลน์และรายละเอียดยานพาหนะ",
+                    "preview": "ดูตัวอย่าง"
+                },
+                {
+                    "title": "คาเฟ่สมัยใหม่",
+                    "technologies": "เทคโนโลยี: HTML, CSS, JavaScript",
+                    "description": "แม่แบบสำหรับคาเฟ่สมัยใหม่ที่มีเมนู การจอง ร้านค้าออนไลน์ และดีไซน์ที่น่าสนใจ",
+                    "preview": "ดูตัวอย่าง"
+                },
+                {
+                    "title": "คาเฟ่คลาสสิก",
+                    "technologies": "เทคโนโลยี: HTML, CSS, JavaScript",
+                    "description": "แม่แบบสำหรับคาเฟ่แบบดั้งเดิมที่มีเมนูคลาสสิก ประวัติ และการจอง",
+                    "preview": "ดูตัวอย่าง"
+                },
+                {
+                    "title": "ร้านเสื้อผ้า",
+                    "technologies": "เทคโนโลยี: HTML, CSS, JavaScript",
+                    "description": "แม่แบบสำหรับร้านเสื้อผ้าที่มีแคตตาล็อกสินค้า รถเข็นช็อปปิ้ง และข้อเสนอพิเศษ",
+                    "preview": "ดูตัวอย่าง"
+                }
+
+            
             ]
         },
         "services": {
