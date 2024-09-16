@@ -136,7 +136,7 @@ section p, section ul {
 }
 
 /******** Estilos responsivos ********/
-@media (max-width: 768px) {
+@media (max-width: 1220px) {
     nav ul {
         display: none;
         flex-direction: column;
@@ -171,11 +171,11 @@ section p, section ul {
     }
 }
 /* Estilos responsivos para centrar el icono de la bandera */
-@media (max-width: 768px) {
+@media (max-width: 1220px) {
     nav ul {
         display: none;
         flex-direction: column;
-        background: #1a1a1a;
+        background: #000000;
         position: absolute;
         top: 60px;
         right: 0;
@@ -189,7 +189,7 @@ section p, section ul {
     nav ul li {
         margin: 0;
         padding: 15px 0;
-        border-bottom: 1px solid #444;
+        border-bottom: 1px solid #ffffff;
         text-align: center;
         width: 100%;
     }
@@ -1042,4 +1042,27 @@ body.dark-mode hr {
 .theme-icon .fa-moon:hover {
     transform: scale(1.2);
     color: #4682B4; /* Color azul acero para la luna al pasar el cursor */
+}
+/* Estilos para el botón de flecha apuntando arriba */
+#backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333; /* Color de fondo del botón */
+    color: #fff; /* Color del icono */
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000; /* Asegura que el botón esté encima de otros elementos */
+    transition: background-color 0.3s ease;
+}
+
+#backToTop:hover {
+    background-color: #555; /* Color de fondo al pasar el cursor */
 }
