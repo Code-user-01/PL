@@ -322,3 +322,8 @@ document.addEventListener("DOMContentLoaded", function() {
 window.onload = function() {
     document.getElementById('about').scrollIntoView(true);
 };
+
+
+document.getElementById('backToTop').addEventListener('click', function() {
+    document.getElementById('about').scrollIntoView({ behavior: 'smooth' });
+});
